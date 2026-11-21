@@ -1,0 +1,50 @@
+buildscript {
+    repositories {
+        // The rebuilt Minecraft/Forge compile SDK that ships with this project.
+        // Forge no longer publishes the 1.12.2 userdev artifact, so this local
+        // jar takes its place (see README.md).
+        maven { url = uri('file:///D:/deobf/_repo') }
+        maven { url = 'https://maven.minecraftforge.net' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+    }
+}
+apply plugin: 'net.minecraftforge.gradle.forge'
+
+repositories {
+    maven { url = uri('file:///D:/deobf/_repo') }
+}
+
+version = "2.7.3"
+group = "lk.vexview"
+archivesBaseName = "vexview"
+
+sourceCompatibility = targetCompatibility = '1.8'
+
+minecraft {
+    version = "1.12.2-14.23.5.2860"
+    mappings = "stable_39"
+    runDir = "run"
+    makeObfSourceJar = false
+}
+
+dependencies {
+    // nothing: VexView only needs Forge + Minecraft
+}
+
+processResources {
+    inputs.property "version", project.version
+    inputs.property "mcversion", project.minecraft.version
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+// The mod bundles its own copy of org.json (as the original jar did); keep it
+// inside the artifact instead of relying on an external dependency.
+jar {
+    from('src/main/resources') { include '**' }
+}

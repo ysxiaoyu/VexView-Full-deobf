@@ -1,0 +1,60 @@
+key.scoreboard=Hide Scoreboard
+key.scoreboard.title=VexView Settings
+
+login.title.register=Enter the password below to  register
+login.title.login=Enter the password below to login
+login.button.register=Register
+login.button.login=Login
+login.button.login.hide=Hide password
+login.button.login.show=Show password
+login.textbox.password=Password
+login.textbox.email=Email
+login.gui.load=Loading background...
+login.password.wrong=§cWrong Password
+login.button.register.email=Enable Email
+login.button.register.email.no=Disable Email
+login.left=Quit
+
+image.dowmloadfailed.login=Custom login texture download failed
+image.dowmloadfailed.scoreboard=Custom scoreboard texture download failed
+image.dowmloadfailed.button=Custom button image download failed
+image.dowmloadfailed.image=Custom picture download failed
+image.dowmloadfailed.gui=Custom GUI texture download failed
+image.dowmloadfailed.npc=Custom NPC texture download failed
+image.dowmloadfailed.local.a=无法从路径
+image.dowmloadfailed.local.b=加载Gui背景贴图！
+image.dowmloadfailed.local.c=无法从网址
+image.dowmloadfailed.type.image= 加载图片组件！
+image.dowmloadfailed.type.button= 加载按钮组件！
+image.dowmloadfailed.type.clickbox= 加载勾选框组件！
+
+text.load.refresh=Refresh
+text.load.prepare=Preparing...
+
+password.hide=●
+
+bq.load=Loading conversation（Downloading...）
+bq.cancel=Cancel
+bq.end=End Conversation
+
+ver.connect=Connecting...
+disconnect.server=Disconnect
+goto.server.website=Server Website
+gui.advancements=Advancements
+
+auto.connect=Connecting...
+auto.disconnect=You are disconnected form server!
+auto.buttom.reconnect=Reconnect
+auto.buttom.left=Quit Game
+
+init.wait=Wait for server data...
+init.ask=Ask for server data...
+init.failed=§cCant get data！
+init.failed.ok=OK
+init.failed.again=Try again
+
+scorebroad.begin=开始下载计分板资源...
+scorebroad.done=计分板资源下载完成！
+scorebroad.failed=计分板资源下载失败！
+
+guide.hud=按下"U"键以打开VexView引导
