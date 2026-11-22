@@ -57,7 +57,7 @@ implements Downable {
         vexImage.f3 = n5;
         vexImage.f4 = n6;
         this.f11 = string;
-        if (this.f11.contains(VerNetManager.m2("KN\u007fAqnm"))) {
+        if (this.f11.contains("[local]")) {
             this.f8 = true;
         }
     }

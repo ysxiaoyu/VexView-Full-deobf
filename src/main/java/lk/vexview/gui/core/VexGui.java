@@ -203,7 +203,7 @@ DynamicUpdate {
         vexGui2.f8 = n6;
         vexGui.f9 = string;
         vexGui.f5 = bl2;
-        if (string.contains(VerNetManager.m2("kn_aQnm"))) {
+        if (string.contains("[local]")) {
             this.f4 = true;
         }
         this.f15 = bl;

@@ -134,7 +134,7 @@ extends GuiIngameMenu {
         String string2 = string;
         s3 = string.split("<##>")[1];
         s4 = string2.split("<##>")[2];
-        s6 = Arrays.asList(string2.split(SBPacketBuffer.m1("\"^2L"))[3].split("<#>"));
+        s6 = Arrays.asList(string2.split("<##>")[3].split("<#>"));
     }
 
     public void handleMouseInput() throws IOException {

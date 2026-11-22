@@ -44,7 +44,7 @@ extends VexComponent {
         vexMcImage.f4 = n9;
         vexMcImage.f6 = n10;
         this.f12 = string;
-        if (this.f12.contains(ChatString.m1("eKqd_kc"))) {
+        if (this.f12.contains("[local]")) {
             this.f11 = true;
         }
     }
